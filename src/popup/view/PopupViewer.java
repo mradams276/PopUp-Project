@@ -13,6 +13,7 @@ public class PopupViewer
 	{
 		JOptionPane.showMessageDialog(null, message);
 	}
+	
 	/**
 	 * Creates an input to collect a response from the user as a string
 	 * @param question The question is being asked the user
@@ -23,6 +24,19 @@ public class PopupViewer
 		String response = "";
 		
 		response = JOptionPane.showInputDialog(null, question);
+		
+		return response;
+	}
+	/**
+	 * Creates a popup to ask a yes/no/cancel type question
+	 * @param question The question being asked the user
+	 * @return The constant value from JOptionPane for y/n/c
+	 */
+	public int collectUserOption(String question)
+	{
+		int response = 0;
+		
+		response = JOptionPane.showConfirmDialog(null, question);
 		
 		return response;
 	}
