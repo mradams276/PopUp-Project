@@ -19,8 +19,9 @@ public class PopupController
 		{
 		display.displayMessage("Hey BRUH");
 		
-		answer = display.collectResponse("Whats going on?");
-		display.displayMessage(answer + " is what you said");
+		answer = display.collectResponse("I hate TORBJORN plz nerf!"
+				+ "?");
+		display.displayMessage(answer + " I really don't care what you say I play overewatch EVUREEY DAY");
 		}
 	}
 }
